@@ -15,9 +15,9 @@ if klein == 'j':
 if gross == 'j':
     inhalt += string.ascii_uppercase
 if zahl == 'j':
-    inhalt += '0123456789'
+    inhalt += string.digits
 if zeichen == 'j':
-    inhalt += '''`~!@#$%^&*()_+-=][';}{":/.,<>?"}'''
+    inhalt += string.punctuation
 
 pw = ''.join(random.choice(inhalt) for i in range(laenge))
 print("Passwort:", pw)
